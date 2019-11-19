@@ -50,7 +50,7 @@ aene-2018-19:
   - run: department_names
     parameters:
       sphere: national
-      financial_year: 2018-19
+      financial_year_column: "FinYear"
       department_column: 'Department'
   - run: multiply
     parameters:

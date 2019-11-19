@@ -29,13 +29,6 @@ epre-2015-16:
     parameters:
       government_column: 'Province'
 
-  - run: department_names
-    parameters:
-      sphere: provincial
-      financial_year: 2015-16
-      department_column: 'Department'
-      government_column: 'Province'
-
   - run: filter
     parameters:
       resources: epre-2015-16
@@ -99,6 +92,13 @@ epre-2015-16:
         patterns:
         - find: "MTEF"
           replace: "Medium Term Estimates"
+
+  - run: department_names
+    parameters:
+      sphere: provincial
+      financial_year_column: "FinYear"
+      department_column: 'Department'
+      government_column: 'Province'
 
   - run: estimates_of_expenditure_tabled_year_phase
     parameters:

@@ -89,6 +89,12 @@ aene-2019-20:
           aggregate: sum
       full: true
 
+  - run: department_names
+    parameters:
+      financial_year_column: "FinYear"
+      department_column: "Department"
+      sphere: national
+
   - run: dump_to_path
     parameters:
       out-path: './processed'

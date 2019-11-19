@@ -50,7 +50,7 @@ epre-subprogrammes-2018-19:
     - run: department_names
       parameters:
         sphere: provincial
-        financial_year: 2018-19
+        financial_year_column: "financial_year"
     - run: multiply
       parameters: {}
     - run: dump.to_path

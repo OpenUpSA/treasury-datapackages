@@ -9,12 +9,6 @@ ene-2019-20:
       format: 'xlsx'
     cache: false
 
-  - run: department_names
-    parameters:
-      sphere: national
-      financial_year: 2019-20
-      department_column: 'Department'
-
   - run: filter
     parameters:
       resources: ene-2019-20
@@ -90,6 +84,12 @@ ene-2019-20:
         patterns:
         - find: 0
           replace: "0"
+
+  - run: department_names
+    parameters:
+      sphere: national
+      financial_year_column: "FinYear"
+      department_column: 'Department'
 
   - run: estimates_of_expenditure_tabled_year_phase
     parameters:

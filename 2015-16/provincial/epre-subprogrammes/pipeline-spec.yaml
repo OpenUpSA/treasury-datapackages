@@ -122,7 +122,7 @@ epre-subprogrammes-2015-16:
     - run: department_names
       parameters:
         sphere: provincial
-        financial_year: 2018-19
+        financial_year_column: "FinYear"
 
     - run: dump.to_path
       parameters:

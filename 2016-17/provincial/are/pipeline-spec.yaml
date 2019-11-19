@@ -90,7 +90,7 @@ are-2016-17:
   - run: department_names
     parameters:
       sphere: provincial
-      financial_year: 2016-17
+      financial_year_column: "FinYear"
       department_column: 'Department'
       government_column: 'Province'
 

@@ -70,7 +70,7 @@ are-2017-18:
   - run: department_names
     parameters:
       sphere: national
-      financial_year: 2017-18
+      financial_year_column: "FinYear"
       department_column: 'Department'
   - run: programme_names
     parameters:
